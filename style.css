@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color:green;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+h2.titulo{
+    color: green;
+    font-size: 28px;
+    text-align: center;
+}
+/* estilo cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: rgba(241, 238, 241, 0.274);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: green;
+    transform: scale(2);
+
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0  40px;
+}
+
+.btn-contato button:hover{
+    background-color:green; /* Muda o fundo do botão */
+  box-shadow: 0 4px 12px rgba(9, 121, 46, 0.3); /* Adiciona uma sombra suave */
+  transform: scale(1.05); /* Um efeito de leve aumento */
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Suaviza a transição */
+}
+/* estilizando o site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+    text-align: justify;
+}
+.topo-do-site .txt-topo-site span{
+    color:green;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 45px;
+    width: 450px;
+    height: 550px;
+    
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+/* estilo projeto */
+
+section.especialidades{
+    padding: 40px 4%;
+    
+}
+section.especialidades .flex{
+    gap: 70px;
+}
+.especialidades .especialidades-box{
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: .2s;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff60;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 55px;
+
+}
+.especialidades .especialidades-box p{
+    
+    font-size: 17px;
+}
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+.especialidades .especialidades-box img{
+    width: 100px;
+    height: 80px;
+}
+
+/* estilando o sobre mim */
+
+section.sobre{
+    padding: 40px 4%;
+
+}
+section.sobre.flex{
+    align-items: center;
+    gap: 60px;
+
+}
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+.sobre .txt-sobre h2 span{
+    color: green;
+    display: block;
+    padding: 20px;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    padding: 15px;
+    
+}
+.sobre img{
+    width: 400px;
+    border-radius: 18px;
+    gap: 20px;
+}
+
+/* estilo contato */
+
+section.formulario{
+    padding: 80px 4%;
+
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 60px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    width: 120px;
+    background-color: green;
+    color: black;
+    cursor: pointer;
+    font-weight: 700;   
+    transform: .2s;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px green;
+    transform: scale(1.05);
+}
