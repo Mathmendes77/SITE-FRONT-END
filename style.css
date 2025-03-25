@@ -41,6 +41,10 @@ header > .interface{
     align-items: center;
     justify-content: space-between;
 }
+header .logo img{
+    width: 100px;
+    border-radius: 100px;
+}
 header a{
     color: rgba(241, 238, 241, 0.274);
     text-decoration: none;
@@ -49,7 +53,7 @@ header a{
 }
 header a:hover{
     color: green;
-    transform: scale(2);
+    transform: scale(1.5);
 
 }
 header nav ul{
@@ -232,5 +236,34 @@ form .btn-enviar input{
 
 form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px green;
-    transform: scale(1.05);
+    transform: scale(1.05);
+}
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgb(35, 82, 50);
+    
+    
+}
+footer .footer-img{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 80px;
+    justify-content: center;
+    
+}
+footer .footer-img img{
+    display: flex;
+    border-radius: 15px;
+    width: 70px;
+    height: 50px;
+    justify-content: center;
+}
+footer .flex{
+    justify-content: space-between;
+    justify-content: center;
+}
+footer .footer-img img:hover{
+    box-shadow: 0px 0px 8px green;
+    transform: scale(1.05);
 }
